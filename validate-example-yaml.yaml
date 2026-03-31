@@ -1,6 +1,6 @@
 # Arquivo de configuração de exemplo
 app_settings:
-  name: "Sistema de Integracao"
+  name: "Sistema de Integracao
   version: 1.0.2
   active: true
 
@@ -18,5 +18,4 @@ environment:
   tags:
     - "security"
     - "automation"
-    - "github-
-  actions"
+    - "github-actions"
