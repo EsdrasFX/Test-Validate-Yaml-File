@@ -1,0 +1,21 @@
+# Arquivo de configuração de exemplo
+app_settings:
+  name: "Sistema de Integracao"
+  version: 1.0.2
+  active: true
+
+# Configurações de rede
+network:
+  port: 8080
+  timeout: 30
+  endpoints:
+    - "/api/v1/data"
+    - "/api/v1/status"
+
+# Metadados de ambiente
+environment:
+  type: "production"
+  tags:
+    - "security"
+    - "automation"
+    - "github-actions"

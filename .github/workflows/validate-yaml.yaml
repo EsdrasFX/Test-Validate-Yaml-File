@@ -1,0 +1,20 @@
+name: YAML Validator
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate YAML syntax
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: "." # Valida todos os arquivos YAML no repo
+          config_data: "{extends: relaxed, rules: {line-length: {max: 120}}}"
