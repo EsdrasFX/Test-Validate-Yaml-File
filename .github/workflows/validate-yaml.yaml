@@ -2,9 +2,9 @@ name: YAML Validator
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   lint:
@@ -16,5 +16,5 @@ jobs:
       - name: Validate YAML syntax
         uses: ibiqlik/action-yamllint@v3
         with:
-          file_or_dir: "." # Valida todos os arquivos YAML no repo
+          file_or_dir: "."  # Valida todos os arquivos YAML no repo
           config_data: "{extends: default, rules: {document-start: disable, line-length: {max: 120}}}"
