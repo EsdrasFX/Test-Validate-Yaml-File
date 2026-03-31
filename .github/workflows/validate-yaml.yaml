@@ -17,4 +17,4 @@ jobs:
         uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: "." # Valida todos os arquivos YAML no repo
-          config_data: "{extends: relaxed, rules: {line-length: {max: 120}}}"
+          config_data: "{extends: default, rules: {document-start: disable, line-length: {max: 120}}}"

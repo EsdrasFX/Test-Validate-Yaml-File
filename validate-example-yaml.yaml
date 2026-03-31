@@ -18,6 +18,6 @@ environment:
   tags:
     - "security"
     - "automation"
-    - github-
-    actions
+    - "github-
+    actions"
   
